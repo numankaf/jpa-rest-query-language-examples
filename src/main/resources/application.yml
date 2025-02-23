@@ -1,0 +1,7 @@
+application:
+  title: Jpa Querying Examples
+  version: 1.0.0
+
+spring:
+  profiles:
+    active: dev
