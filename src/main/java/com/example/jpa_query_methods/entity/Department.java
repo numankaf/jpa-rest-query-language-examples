@@ -21,7 +21,7 @@ public class Department extends BaseEntity {
     @Column(name = "description", length = 1000)
     private String description;
 
-    @Column(name = "sequence_number")
+    @Column(name = "sequence_number", unique = true)
     private Integer sequence_number;
 
     @OneToMany(mappedBy = "department")

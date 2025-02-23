@@ -3,6 +3,7 @@ package com.example.jpa_query_methods.entity;
 import com.example.jpa_query_methods.embeddable.Address;
 import com.example.jpa_query_methods.enums.EBloodType;
 import com.example.jpa_query_methods.enums.EPersonGender;
+import com.example.jpa_query_methods.enums.EPersonRole;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -33,6 +34,10 @@ public class Person extends BaseEntity {
     @Column(name = "gender")
     @Enumerated(EnumType.STRING)
     private EPersonGender gender;
+
+    @Column(name = "role")
+    @Enumerated(EnumType.STRING)
+    private EPersonRole role;
 
     @Column(name = "blood_type")
     @Enumerated(EnumType.STRING)
